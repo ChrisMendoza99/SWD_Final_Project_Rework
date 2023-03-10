@@ -1,10 +1,9 @@
 /*
     Made by Christopher A. Mendoza
-    Last modified on 1/11/2023
+    Last modified on 3/09/2023
 */
 #include <stdio.h>
 #include <stdlib.h>
-#include <stdbool.h>
 /*Custom Header Files*/
 #include "students.h"
 #include "gradeCalculator.h"
@@ -23,7 +22,7 @@ int main()
     int totalArrSize;
     int maxGrade;
     int minGrade;
-    int avgMin;
+    int avgMin; 
     int avgMax;
     int storeSize = 0;
     /*This first portions will take in the input of the user*/
@@ -81,9 +80,9 @@ int main()
                 {
                     printf("The average for %s %s -> %0.2f\n", student[g].firstName,student[g].lastName, student[g].Average);
                     avgMin = GetAvgMin(student, totalStudents);
-                    printf("avgMin = %i\n", avgMin);
+                    //printf("avgMin = %i\n", avgMin);
                     avgMax = GetAvgMax(student, totalStudents);
-                    printf("avgMax = %i\n", avgMax);
+                    //printf("avgMax = %i\n", avgMax);
                 }
                 printf("\n|==============================================================|\n");
                 printf("Do you wish to continue with the program??\n");
@@ -124,7 +123,5 @@ int main()
         printf("Input not valid\n");
         
     }
-
     return 0;
 }
-
